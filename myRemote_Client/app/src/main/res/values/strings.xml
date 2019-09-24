@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">myRemote Client</string>
+    <string name="help_welcome">Welcome</string>
+    <string name="help_intro">What do you need help with?</string>
+    <string name="help_question_1">How do I connect this app to a PC?</string>
+    <string name="help_answer_1">You need to have the server app installed and running on your PC for the two devices to be able to communicate.</string>
+    <string name="help_question_2">How to know what IP and port to enter?</string>
+    <string name="help_answer_2">Don\'t freak out just yet! The server side app will automatically generate those values for you. Upon running the server app, simply enter the displayed values into the mobile app login screen.</string>
+    <string name="help_question_3">How do I disconnect from my PC?</string>
+    <string name="help_answer_3">You can do this a few ways; you can press the \'back\' button on your device, or you can navigate to the menu where you can click the \'disconnect\' button.</string>
+    <string name="help_question_4">How do I enter keyboard input?</string>
+    <string name="help_answer_4">To enter keyboard input to your connected PC, simply tap on the top-middle text entry field marked with a prompt. From here, you can type your input and tap the Enter button to the right. This will send your text to the PC and close the virtual keyboard on screen. Press the Enter button again (with empty input) to register the enter key on the PC.</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="preference_mouse_speed">mouseSpeed</string>
+    <string name="btn_help">HELP</string>
+    <string name="btn_connect">CONNECT</string>
+    <string name="edt_port">enter port number</string>
+    <string name="chk_save">Save</string>
+    <string name="edt_ip">enter ip address</string>
+
+    <string-array name="mouse_speed">
+        <item>Slowest</item>
+        <item>Slow</item>
+        <item>Default</item>
+        <item>Fast</item>
+        <item>Fastest</item>
+    </string-array>
+
+    <string-array name="mouse_speed_values">
+        <item>0.25</item>
+        <item>0.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>1.75</item>
+    </string-array>
+
+
+</resources>

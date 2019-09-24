@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    tools:context=".RemoteActivity">
+
+    <!-- KEYBOARD INPUT SECTION -->
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp">
+
+        <Button
+            android:id="@+id/btn_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_weight="0.13"
+            android:background="#60A0D6"
+            android:text="Tab"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/edt_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="0.74"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:hint="enter keyboard input here"
+            android:lines="1"
+            android:maxLength="100"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_enter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_weight="0.13"
+            android:background="#60A0D6"
+            android:text="Enter"
+            android:textColor="#fff" />
+
+    </TableRow>
+
+    <!-- MOUSE PAD + SCROLL BARS -->
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1">
+
+        <!-- MOUSE PAD -->
+        <TextView
+            android:id="@+id/txt_mouse_pad"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_weight="0.87"
+            android:background="#ccbfbfbf"
+            android:gravity="fill_vertical"
+            android:text="Drag your finger here to activate mouse pad control"
+            android:textAlignment="center" />
+
+        <!-- SCROLL BARS -->
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="0.13">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_scroll_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="0.5"
+                    android:background="#60A0D6"
+                    android:src="@drawable/ic_scroll_up_item"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ImageButton
+                    android:id="@+id/btn_scroll_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="0.5"
+                    android:background="#60A0D6"
+                    android:src="@drawable/ic_scroll_down_item"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableRow>
+
+    <!-- LEFT/RIGHT BUTTONS -->
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp">
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="0.5"
+            android:background="#60A0D6"
+            android:text="L"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_weight="0.5"
+            android:background="#60A0D6"
+            android:text="R"
+            android:textColor="#fff" />
+
+    </TableRow>
+
+    <!-- UTILITY BUTTONS -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_flix"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_weight="0.2"
+            android:text="Netflix"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_tube"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight="0.2"
+            android:text="Youtube"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/btn_play"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight="0.15"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_play_item"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/btn_vol_down"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight="0.15"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_vol_item"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/btn_vol_up"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="4"
+            android:layout_weight="0.15"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_vol_up_item"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/btn_full_screen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="5"
+            android:layout_weight="0.15"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_full_screen_item"
+            tools:ignore="VectorDrawableCompat" />
+
+    </TableRow>
+
+</TableLayout>

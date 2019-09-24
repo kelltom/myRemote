@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60a0d6"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- LOGO -->
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="110dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="center"
+        android:src="@drawable/my_remote" />
+
+    <!-- IP EDT & SAVE IP CHK -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="75dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_ip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:hint="@string/edt_ip"
+            android:inputType="textPersonName"
+            android:maxLength="15"
+            android:textColor="#e6e6e6"
+            android:textColorHint="#e6e6e6"
+            android:textSize="17sp" />
+
+        <CheckBox
+            android:id="@+id/chk_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="@string/chk_save"
+            android:textColor="#e6e6e6"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <!-- PORT EDT -->
+    <EditText
+        android:id="@+id/edt_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/edt_port"
+        android:inputType="textPersonName"
+        android:maxLength="5"
+        android:textColor="#e6e6e6"
+        android:textColorHint="#e6e6e6"
+        android:textSize="17sp" />
+
+    <!-- CONNECT BUTTON -->
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="#1062E5"
+        android:text="@string/btn_connect"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+    <!-- HELP BUTTON -->
+    <Button
+        android:id="@+id/btn_help"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/btn_help"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="14sp" />
+</LinearLayout>

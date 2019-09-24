@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Preferences">
+
+        <ListPreference
+            android:dialogTitle="Select Mouse Speed"
+            android:entries="@array/mouse_speed"
+            android:entryValues="@array/mouse_speed_values"
+            android:key="@string/preference_mouse_speed"
+            android:summary="Client specific sensitivity"
+            android:title="Set Mouse Sensitivity" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
