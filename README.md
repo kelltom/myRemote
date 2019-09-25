@@ -1,7 +1,7 @@
 # myRemote
 
 ### About
-*myRemote* is an Android application to act as a remote control for your PC (works best on Windows). It is simple to start using, and very easy to learn the controls (very similar to a TV remote). The app allows the user to connect to their PC device over Wi-Fi, enabling control over the PC’s mouse, keyboard input, quick access to popular media sites such as YouTube & Netflix, and more. The application is split into 2 parts; client and server.
+*myRemote* is an Android application to act as a remote control for your PC (works best on Windows). This application allows the user to connect to their PC device over Wi-Fi, enabling control over the PC’s mouse, keyboard input, quick access to popular media sites such as YouTube & Netflix, and more. The application is split into 2 parts; client and server.
 
 #### To install:
 - Click [Releases](https://github.com/kell90/myRemote/releases) in this repository and download myRemote_Client.apk, and myRemote_Server.jar.
