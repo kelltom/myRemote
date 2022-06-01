@@ -18,6 +18,7 @@
 - Once a connection is established, you may use the mobile phone as a remote to control the desktop's keyboard and mouse. Connection status can be verified by checking the server application interface.
 
 ![remote_view1](https://user-images.githubusercontent.com/44652363/171480881-2c4d87ad-b267-465c-95d2-f81caca00ad1.png)
+
 ![connected 2](https://user-images.githubusercontent.com/44652363/171480427-6276c7dc-2582-428e-b801-10ed23aac563.png)
 
 ------------
